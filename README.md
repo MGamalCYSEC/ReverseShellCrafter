@@ -23,13 +23,15 @@ Server-Side Reverse shell (Windows)
 
 | Language / Technology | File Name                | Description                              | Target OS |
 |------------------------|--------------------------|------------------------------------------|-----------|
-| PHP                   | `reverse.php`           | PHP reverse shell for web servers.      | Windows  |
+| PHP                   | `reverse.php`           | PHP reverse shell for web servers.      | Cross-OS  |
 | ASP                   | `reverse.asp`           | ASP reverse shell for IIS servers.      | Windows   |
 | ASPX                  | `reverse.aspx`          | ASPX reverse shell using .NET.          | Windows   |
-| Perl                  | `reverse.pl`            | Perl reverse shell for legacy systems.  | Windows  |
-| Ruby                  | `reverse.rb`            | Ruby reverse shell.                     | Windows  |
-| Node.js               | `reverse.js`            | Node.js reverse shell.                  | Windows  |
-| JSP                   | `reverse.jsp`           | Java reverse shell for Tomcat servers.  | Windows  |
+| Perl                  | `reverse.pl`            | Perl reverse shell for legacy systems.  | Cross-OS  |
+| Ruby                  | `reverse.rb`            | Ruby reverse shell.                     | Cross-OS  |
+| Node.js               | `reverse.js`            | Node.js reverse shell.                  | Cross-OS  |
+| JSP                   | `reverse.jsp`           | Java reverse shell for Tomcat servers.  | Cross-OS  |
+| Bash                  | `reverse.sh`           | Bash-based reverse shell for Linux.  | Linux  |
+| Python                | `reverse.py`           | Python reverse shell.  | Cross-OS  |
 
 ---
 
