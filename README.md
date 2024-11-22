@@ -19,7 +19,7 @@ ReverseShellForge is a repository containing reverse shell payloads written in v
 ---
 
 ## 📂 **Contents**  
-Server-Side Reverse shell (Windows)
+Server-Side Reverse shell 
 
 | Language / Technology | File Name                | Description                              | Target OS |
 |------------------------|--------------------------|------------------------------------------|-----------|
