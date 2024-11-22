@@ -63,7 +63,7 @@ This repository is intended **only for legal and ethical use**. Unauthorized use
 
 ## 🌐 **Connect**  
 Feel free to reach out for suggestions or discussions:  
-- **LinkedIn**: [LinkedIn](https://www.linkedin.com/in/mgamal202/)]  
+[LinkedIn](https://www.linkedin.com/in/mgamal202/)
 ---
 
 This README provides a professional and comprehensive overview of your repository, making it easy for users to understand and use your scripts effectively!
