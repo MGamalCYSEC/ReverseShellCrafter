@@ -64,6 +64,3 @@ This will start Netcat on port `4444`, listening for incoming connections from t
 
 This tool is intended for use only in authorized penetration tests, security assessments, or other lawful security-related activities. Unauthorized access to computers and networks is illegal and unethical. Always obtain explicit written permission before using this tool on any system that you do not own or have authorization to test.
 
----
-
-By following this README, you should be able to execute and understand the reverse shell setup for ethical hacking purposes. Let me know if you need more information or adjustments!
