@@ -1,4 +1,4 @@
-### **Reverse Shell Setup & Execution Guide**
+### **Direct Reverse Shell Setup**
 
 ## **Overview**
 This document provides instructions for setting up and using a **Windows Reverse Shell** to connect from a target Windows machine back to an attacker's machine. The reverse shell allows an attacker to remotely execute commands on the target system by initiating a connection from the target to the attacker’s listener.
