@@ -61,7 +61,7 @@ Use the c code called `reverse_to_dll.c`
 To compile the code into a DLL, use:
 
 ```bash
-x86_64-w64-mingw32-gcc -o reverse.dll reversedll.c -lws2_32 -shared
+x86_64-w64-mingw32-gcc -o reverse.dll reverse_to_dll.c -lws2_32 -shared
 ```
 
 ---
