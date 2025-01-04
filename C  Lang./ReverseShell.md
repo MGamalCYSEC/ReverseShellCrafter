@@ -1,6 +1,3 @@
-Here's a clean and structured **Markdown** (.md) version for your GitHub repository tutorial page:
-
-```markdown
 # Reverse Shell C Code Tutorial for Windows
 
 This guide demonstrates how to create a reverse shell in C on Windows using Winsock2, compile it, and optionally wrap it into a DLL that can be executed remotely.
