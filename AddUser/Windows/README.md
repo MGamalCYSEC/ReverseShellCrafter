@@ -1,6 +1,6 @@
 # **Purpose**:
-    - Adds a user `hacker` with a password `password123!`.
-    - Elevates the user to the Administrators group.
+    Adds a user `hacker` with a password `password123`.
+    Elevates the user to the Administrators group.
 
 ---
 
