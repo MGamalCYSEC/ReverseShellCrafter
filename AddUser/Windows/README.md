@@ -4,7 +4,7 @@
 
 ---
 
-## **5. Compile the Malicious DLL**
+## ** Compile the Malicious DLL**
 
 - Use MinGW to compile the DLL:
 
