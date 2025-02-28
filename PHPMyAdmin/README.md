@@ -3,6 +3,9 @@
 - Access to the phpMyAdmin interface with valid credentials (via credential guessing or other methods).
 - `FILE` privileges granted to the MySQL user account.
 - The webroot location of the target server must be known and writable by MySQL.
+- Note
+![image](https://github.com/user-attachments/assets/8b60f1c5-8335-436b-91c9-8ea681ee8143)
+This looks like it would be vulnerable to an Insecure Direct Object Reference (IDOR).
 
 #### **Steps to Achieve RCE**
 
