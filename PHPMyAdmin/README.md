@@ -1,3 +1,6 @@
+
+The default username for phpMyAdmin is "root" and the default password is usually empty.
+
 #### **Prerequisites**
 
 - Access to the phpMyAdmin interface with valid credentials (via credential guessing or other methods).
